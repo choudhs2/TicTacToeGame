@@ -6,15 +6,15 @@ class TTTGame {
     public:
         int g[3][3];
     TTTGame() {
-        for (int i = 0; i < g.size(); i++) {
-            for (int j = 0; j < g[0].size(); j++) {
+        for (int i = 0; i < 3); i++) {
+            for (int j = 0; j < 3; j++) {
                 g[i][j] = 0;
             }
         }
     }
     TTTGame(int xg[3][3]) {
-        for (int i = 0; i < xg.size(); i++) {
-            for (int j = 0; j < xg[0].size(); j++) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 g[i][j] = xg[i][j];
             }
         }
