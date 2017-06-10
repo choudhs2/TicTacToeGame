@@ -44,12 +44,12 @@ public:
     void move(int x){
         if(x%2==1){
             int row, col;
-            cout<<"Enter a row (lowest is 0, highest is 2): ";
+            cout<<"Enter a row (lowest is 1, highest is 3): ";
             cin>>row;
-            cout<<endl<<"Enter a column (lowest is 0, highest is 2): ";
+            cout<<endl<<"Enter a column (lowest is 1, highest is 3): ";
             cin>>col;
             cout<<endl;
-            board[row][col]='O';
+            board[row-1][col-1]='O';
         }
         else{
             Game n = Game(*board);
